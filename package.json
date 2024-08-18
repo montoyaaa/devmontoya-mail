@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "dev": "node index.js",
-    "build": "webpack",
-    "vercel-build": "echo hello"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "type": "module",
   "author": "",
@@ -14,10 +12,12 @@
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mailersend": "^2.2.0"
   },
   "devDependencies": {
+    "nodemon": "^3.1.4",
     "webpack": "^5.93.0",
     "webpack-cli": "^5.1.4"
   }
