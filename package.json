@@ -14,7 +14,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "mailersend": "^2.2.0"
+    "mailersend": "^2.2.0",
+    "vercel-build": "echo hello"
   },
   "devDependencies": {
     "webpack": "^5.93.0",
