@@ -2,7 +2,7 @@ import express from "express";
 import { EmailParams, MailerSend } from "mailersend";
 import cors from "cors";
 const app = express();
-const port = 3000;
+const port = env.PORT ?? 3000;
 
 const mailerSend = new MailerSend({
   apiKey:
