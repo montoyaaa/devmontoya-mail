@@ -6,7 +6,6 @@
     "start": "node api/index.js",
     "dev": "nodemon api/index.js"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
