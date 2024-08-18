@@ -13,6 +13,8 @@ const mailerSend = new MailerSend({
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => res.send("On the line!"));
+
 app.post("/email", async (req, res) => {
   const emailParams = new EmailParams()
     .setFrom(req.body.from)
