@@ -4,8 +4,7 @@ const cors = require("cors");
 const { env } = require("process");
 
 const mailerSend = new MailerSend({
-  apiKey:
-    "mlsn.4cbaa1dd3d19e68a2b6369d55bf5e50d0dde28ee071f097347b76da8dafb04a8",
+  apiKey: env.API_KEY,
 });
 
 const app = express();
