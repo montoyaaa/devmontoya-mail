@@ -1,6 +1,7 @@
 import express from "express";
 import { EmailParams, MailerSend } from "mailersend";
 import cors from "cors";
+import { env } from "process";
 const app = express();
 const port = env.PORT ?? 3000;
 
