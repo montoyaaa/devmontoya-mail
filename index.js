@@ -2,7 +2,6 @@ import express from "express";
 import { EmailParams, MailerSend } from "mailersend";
 import cors from "cors";
 import { env } from "process";
-import api from "./api";
 
 export const app = express();
 const port = env.PORT ?? 3000;
@@ -34,5 +33,3 @@ app.post("/email", async (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
-
-app.use("api/v1", api);
